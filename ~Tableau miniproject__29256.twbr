@@ -1,0 +1,2756 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <Extensions />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <_.fcp.VizExtensions.true...VizExtensions />
+    <_.fcp.VizExtensionsDupEncodingUUID.true...VizExtensionsDupEncodingUUID />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+    <color-palette custom='true' name='tp' type='ordered-sequential'>
+      <color>#e0f2fe</color>
+      <color>#1e3a8a</color>
+    </color-palette>
+  </preferences>
+  <datasources>
+    <datasource caption='crime_data_cleaned (crime_data_cleaned)' inline='true' name='federated.1ct35691nzrczl1dvcpxo1ohbglk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='crime_data_cleaned' name='excel-direct.0gidmlr0w82gwr0zpicdy0axko8g'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ayush/OneDrive/Desktop/dedv/crime_data_cleaned.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0gidmlr0w82gwr0zpicdy0axko8g' name='crime_data_cleaned' table='[crime_data_cleaned$]' type='table'>
+          <columns gridOrigin='A1:U4680:no:A1:U4680:0' header='yes' outcome='6'>
+            <column datatype='string' name='Disposition' ordinal='0' />
+            <column datatype='string' name='Offender_Race' ordinal='1' />
+            <column datatype='string' name='Offender_Gender' ordinal='2' />
+            <column datatype='integer' name='Offender_Age' ordinal='3' />
+            <column datatype='string' name='PersonType' ordinal='4' />
+            <column datatype='string' name='Victim_Race' ordinal='5' />
+            <column datatype='string' name='Victim_Gender' ordinal='6' />
+            <column datatype='integer' name='Victim_Age' ordinal='7' />
+            <column datatype='string' name='Victim_Fatal_Status' ordinal='8' />
+            <column datatype='string' name='Report_Type' ordinal='9' />
+            <column datatype='string' name='Category' ordinal='10' />
+            <column datatype='integer' name='Disposition_Encoded' ordinal='11' />
+            <column datatype='integer' name='Is_Fatal' ordinal='12' />
+            <column datatype='integer' name='Is_Incident_Report' ordinal='13' />
+            <column datatype='string' name='Offender_Age_Band' ordinal='14' />
+            <column datatype='string' name='Victim_Age_Band' ordinal='15' />
+            <column datatype='integer' name='Same_Race' ordinal='16' />
+            <column datatype='integer' name='Same_Gender' ordinal='17' />
+            <column datatype='integer' name='Age_Difference' ordinal='18' />
+            <column datatype='integer' name='Is_Third_Party_Report' ordinal='19' />
+            <column datatype='real' name='Category_Lethality_Pct' ordinal='20' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U4680:no:A1:U4680:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Disposition</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Disposition]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Disposition</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offender_Race</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Offender_Race]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Offender_Race</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offender_Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Offender_Gender]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Offender_Gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offender_Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Offender_Age]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Offender_Age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PersonType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PersonType]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>PersonType</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victim_Race</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Victim_Race]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Victim_Race</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victim_Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Victim_Gender]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Victim_Gender</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victim_Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Victim_Age]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Victim_Age</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victim_Fatal_Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Victim_Fatal_Status]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Victim_Fatal_Status</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Report_Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Report_Type]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Report_Type</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Disposition_Encoded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Disposition_Encoded]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Disposition_Encoded</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is_Fatal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is_Fatal]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Is_Fatal</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is_Incident_Report</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is_Incident_Report]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Is_Incident_Report</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offender_Age_Band</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Offender_Age_Band]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Offender_Age_Band</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victim_Age_Band</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Victim_Age_Band]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Victim_Age_Band</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Same_Race</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Same_Race]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Same_Race</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Same_Gender</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Same_Gender]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Same_Gender</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age_Difference</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age_Difference]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Age_Difference</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is_Third_Party_Report</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is_Third_Party_Report]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Is_Third_Party_Report</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category_Lethality_Pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Category_Lethality_Pct]</local-name>
+            <parent-name>[crime_data_cleaned]</parent-name>
+            <remote-alias>Category_Lethality_Pct</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age Difference' datatype='integer' name='[Age_Difference]' role='measure' type='quantitative' />
+      <column caption='Resolution Rate' datatype='real' name='[Calculation_0289225089290240]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [Disposition] = &quot;CLOSED&quot; THEN 1 ELSE 0 END) / COUNT([Disposition])' />
+      </column>
+      <column caption='Open Cases' datatype='integer' name='[Calculation_0289225089417217]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [Disposition] = &quot;OPEN&quot; THEN 1 ELSE 0 END)' />
+      </column>
+      <column caption='Closed Cases' datatype='integer' name='[Calculation_0289225089736706]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [Disposition] = &quot;CLOSED&quot; THEN 1 ELSE 0 END)' />
+      </column>
+      <column caption='Same Gender %' datatype='real' name='[Calculation_0289225089863683]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Same_Gender]) / COUNT([Same_Gender])' />
+      </column>
+      <column caption='Same Race %' datatype='real' name='[Calculation_0289225089970180]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Same_Race]) / COUNT([Same_Race])' />
+      </column>
+      <column caption='Victim Count' datatype='integer' name='[Calculation_0289225094545415]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Victim_Age_Band])' />
+      </column>
+      <column caption='Offender Count' datatype='integer' name='[Calculation_0289225094631432]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='- COUNT([Offender_Age_Band])' />
+      </column>
+      <column caption='1' datatype='integer' name='[Calculation_0289225106079755]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Count Fix' datatype='integer' name='[Calculation_2010512161251331]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(COUNT([Category]))' />
+      </column>
+      <column caption='Gender Combo' datatype='string' name='[Calculation_2010512167583748]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Offender_Gender] + &quot; → &quot; + [Victim_Gender]' />
+      </column>
+      <column caption='Category (copy)' datatype='string' name='[Category (copy)_2010511992123393]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Category]' />
+      </column>
+      <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+      <column caption='Category Lethality Pct' datatype='real' name='[Category_Lethality_Pct]' role='measure' type='quantitative' />
+      <column caption='Disposition Encoded' datatype='integer' name='[Disposition_Encoded]' role='measure' type='quantitative' />
+      <column caption='Is Fatal' datatype='integer' name='[Is_Fatal]' role='measure' type='quantitative' />
+      <column caption='Is Incident Report' datatype='integer' name='[Is_Incident_Report]' role='measure' type='quantitative' />
+      <column caption='Is Third Party Report' datatype='integer' name='[Is_Third_Party_Report]' role='measure' type='quantitative' />
+      <column caption='Offender Age' datatype='integer' name='[Offender_Age]' role='measure' type='quantitative' />
+      <column caption='Offender Age Band' datatype='string' name='[Offender_Age_Band]' role='dimension' type='nominal' />
+      <column caption='Offender Gender' datatype='string' name='[Offender_Gender]' role='dimension' type='nominal' />
+      <column caption='Offender Race' datatype='string' name='[Offender_Race]' role='dimension' type='nominal' />
+      <column caption='Person Type' datatype='string' name='[PersonType]' role='dimension' type='nominal' />
+      <column caption='Report Type' datatype='string' name='[Report_Type]' role='dimension' type='nominal' />
+      <column caption='Same Gender' datatype='integer' name='[Same_Gender]' role='measure' type='quantitative' />
+      <column caption='Same Race' datatype='integer' name='[Same_Race]' role='measure' type='quantitative' />
+      <column caption='Victim Age' datatype='integer' name='[Victim_Age]' role='measure' type='quantitative' />
+      <column caption='Victim Age Band' datatype='string' name='[Victim_Age_Band]' role='dimension' type='nominal' />
+      <column caption='Victim Fatal Status' datatype='string' name='[Victim_Fatal_Status]' role='dimension' type='nominal' />
+      <column caption='Victim Gender' datatype='string' name='[Victim_Gender]' role='dimension' type='nominal' />
+      <column caption='Victim Race' datatype='string' name='[Victim_Race]' role='dimension' type='nominal' />
+      <column caption='crime_data_cleaned' datatype='table' name='[__tableau_internal_object_id__].[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_0289225094545415]' derivation='Count' name='[cnt:Calculation_0289225094545415:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Victim_Age_Band]' derivation='Count' name='[cnt:Victim_Age_Band:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Offender_Age_Band]' derivation='None' name='[none:Offender_Age_Band:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Victim_Age_Band]' derivation='None' name='[none:Victim_Age_Band:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_0289225094545415]' derivation='Sum' name='[sum:Calculation_0289225094545415:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_0289225094545415]' derivation='User' name='[usr:Calculation_0289225094545415:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_0289225094631432]' derivation='User' name='[usr:Calculation_0289225094631432:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/ayush/AppData/Local/Temp/TableauTemp/#TableauTemp_1iucxfa04kphoj14oaigk180p15w.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/01/2026 08:11:23 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Disposition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Disposition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Disposition</remote-alias>
+              <ordinal>0</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Offender_Race</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Offender_Race]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Offender_Race</remote-alias>
+              <ordinal>1</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Offender_Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Offender_Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Offender_Gender</remote-alias>
+              <ordinal>2</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Offender_Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Offender_Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Offender_Age</remote-alias>
+              <ordinal>3</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PersonType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PersonType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PersonType</remote-alias>
+              <ordinal>4</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Victim_Race</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Victim_Race]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Victim_Race</remote-alias>
+              <ordinal>5</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Victim_Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Victim_Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Victim_Gender</remote-alias>
+              <ordinal>6</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Victim_Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Victim_Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Victim_Age</remote-alias>
+              <ordinal>7</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>98</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Victim_Fatal_Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Victim_Fatal_Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Victim_Fatal_Status</remote-alias>
+              <ordinal>8</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Report_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Report_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Report_Type</remote-alias>
+              <ordinal>9</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>10</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Disposition_Encoded</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Disposition_Encoded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Disposition_Encoded</remote-alias>
+              <ordinal>11</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Is_Fatal</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Is_Fatal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Is_Fatal</remote-alias>
+              <ordinal>12</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Is_Incident_Report</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Is_Incident_Report]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Is_Incident_Report</remote-alias>
+              <ordinal>13</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Offender_Age_Band</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Offender_Age_Band]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Offender_Age_Band</remote-alias>
+              <ordinal>14</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Victim_Age_Band</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Victim_Age_Band]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Victim_Age_Band</remote-alias>
+              <ordinal>15</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Same_Race</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Same_Race]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Same_Race</remote-alias>
+              <ordinal>16</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Same_Gender</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Same_Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Same_Gender</remote-alias>
+              <ordinal>17</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age_Difference</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age_Difference]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age_Difference</remote-alias>
+              <ordinal>18</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>125</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Is_Third_Party_Report</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Is_Third_Party_Report]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Is_Third_Party_Report</remote-alias>
+              <ordinal>19</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category_Lethality_Pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Category_Lethality_Pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category_Lethality_Pct</remote-alias>
+              <ordinal>20</ordinal>
+              <family>crime_data_cleaned</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout common-percentage='1' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' user-set-layout-v2='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='jewel_bright_10_0' type='palette'>
+            <map to='#5fbb68'>
+              <bucket>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk]&quot;</bucket>
+            </map>
+            <map to='#87d180'>
+              <bucket>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Calculation_0289225094545415:qk]&quot;</bucket>
+            </map>
+            <map to='#87d180'>
+              <bucket>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[sum:Calculation_0289225094545415:qk]&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Victim_Age_Band:qk]&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Victim_Age_Band:nk]&quot;</bucket>
+            </map>
+            <map to='#fcc66d'>
+              <bucket>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]:1&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Category:nk]' palette='green_orange_cyan_yellow_10_0' type='palette'>
+            <map to='#10b981'>
+              <bucket>&quot;Theft&quot;</bucket>
+            </map>
+            <map to='#2563eb'>
+              <bucket>&quot;Violence&quot;</bucket>
+            </map>
+            <map to='#6366f1'>
+              <bucket>&quot;Drug and Weapon Crimes&quot;</bucket>
+            </map>
+            <map to='#ef4444'>
+              <bucket>&quot;Sexual Crimes&quot;</bucket>
+            </map>
+            <map to='#f97316'>
+              <bucket>&quot;Vandalism&quot;</bucket>
+            </map>
+            <map to='#facc15'>
+              <bucket>&quot;Miscellaneous&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Offender_Age_Band:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;0–17 (Juvenile)&quot;</bucket>
+            <bucket>&quot;18–25 (Young Adult)&quot;</bucket>
+            <bucket>&quot;26–35 (Adult)&quot;</bucket>
+            <bucket>&quot;36–45 (Mid Adult)&quot;</bucket>
+            <bucket>&quot;46–60 (Mature)&quot;</bucket>
+            <bucket>&quot;60+ (Senior)&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+        <manual-sort column='[none:Victim_Age_Band:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;0–17 (Juvenile)&quot;</bucket>
+            <bucket>&quot;18–25 (Young Adult)&quot;</bucket>
+            <bucket>&quot;26–35 (Adult)&quot;</bucket>
+            <bucket>&quot;36–45 (Mid Adult)&quot;</bucket>
+            <bucket>&quot;46–60 (Mature)&quot;</bucket>
+            <bucket>&quot;60+ (Senior)&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <object-graph>
+        <objects>
+          <object caption='crime_data_cleaned' id='crime!data!cleaned_2E5C3EE3774D4B5DA487765B24EC757A'>
+            <properties context=''>
+              <relation connection='excel-direct.0gidmlr0w82gwr0zpicdy0axko8g' name='crime_data_cleaned' table='[crime_data_cleaned$]' type='table'>
+                <columns gridOrigin='A1:U4680:no:A1:U4680:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Disposition' ordinal='0' />
+                  <column datatype='string' name='Offender_Race' ordinal='1' />
+                  <column datatype='string' name='Offender_Gender' ordinal='2' />
+                  <column datatype='integer' name='Offender_Age' ordinal='3' />
+                  <column datatype='string' name='PersonType' ordinal='4' />
+                  <column datatype='string' name='Victim_Race' ordinal='5' />
+                  <column datatype='string' name='Victim_Gender' ordinal='6' />
+                  <column datatype='integer' name='Victim_Age' ordinal='7' />
+                  <column datatype='string' name='Victim_Fatal_Status' ordinal='8' />
+                  <column datatype='string' name='Report_Type' ordinal='9' />
+                  <column datatype='string' name='Category' ordinal='10' />
+                  <column datatype='integer' name='Disposition_Encoded' ordinal='11' />
+                  <column datatype='integer' name='Is_Fatal' ordinal='12' />
+                  <column datatype='integer' name='Is_Incident_Report' ordinal='13' />
+                  <column datatype='string' name='Offender_Age_Band' ordinal='14' />
+                  <column datatype='string' name='Victim_Age_Band' ordinal='15' />
+                  <column datatype='integer' name='Same_Race' ordinal='16' />
+                  <column datatype='integer' name='Same_Gender' ordinal='17' />
+                  <column datatype='integer' name='Age_Difference' ordinal='18' />
+                  <column datatype='integer' name='Is_Third_Party_Report' ordinal='19' />
+                  <column datatype='real' name='Category_Lethality_Pct' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Gender'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BD793967-8426-461F-8ABD-1C8AEC507E4F}' />
+    </worksheet>
+    <worksheet name='KPI1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crime_data_cleaned (crime_data_cleaned)' name='federated.1ct35691nzrczl1dvcpxo1ohbglk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ct35691nzrczl1dvcpxo1ohbglk'>
+            <column caption='Resolution Rate' datatype='real' name='[Calculation_0289225089290240]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [Disposition] = &quot;CLOSED&quot; THEN 1 ELSE 0 END) / COUNT([Disposition])' />
+            </column>
+            <column datatype='string' name='[Disposition]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0289225089290240]' derivation='User' name='[usr:Calculation_0289225089290240:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225089290240:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3C44CB0E-6A57-4667-BEB6-02097FB93892}' />
+    </worksheet>
+    <worksheet name='KPI2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{46B27F54-DB89-4CAD-B51C-22F4CBF3B19C}' />
+    </worksheet>
+    <worksheet name='KPI3'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A53E561F-EDA4-44CA-9C5A-ABC8AF4C19AF}' />
+    </worksheet>
+    <worksheet name='OBJ1- Crime Category Disribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crime_data_cleaned (crime_data_cleaned)' name='federated.1ct35691nzrczl1dvcpxo1ohbglk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ct35691nzrczl1dvcpxo1ohbglk'>
+            <column caption='Category (copy)' datatype='string' name='[Category (copy)_2010511992123393]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Category]' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column-instance column='[Category (copy)_2010511992123393]' derivation='None' name='[none:Category (copy)_2010511992123393:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Category]' derivation='Count' name='[pcto:cnt:Category:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='tick-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]' value='center' />
+            <format attr='color' data-class='subtotal' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#0f172a' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#0f172a' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' value='#000000' />
+            <format attr='stroke-size' value='4' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <_.fcp.VizExtensions.false...mark class='Automatic' />
+            <_.fcp.VizExtensions.true...mark class='VizExtension' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <_.fcp.VizExtensions.true...add-in add-in-id='com.ladataviz.extension.donut' extension-url='https://partner-extensions.tableauusercontent.com/viz/ladataviz/all/donut.html' extension-version='1.0.0' instance-id='82EDC0A804924B6FA9504DEDA4430C69'>
+              <instance-settings>
+                <setting key='vizConfig' value='{&quot;donutStrokeColorAuto&quot;:false,&quot;donutStrokeColor&quot;:&quot;#FFFFFF&quot;,&quot;donutStrokeWidth&quot;:[0],&quot;donutOpacity&quot;:[100],&quot;featuresRotation&quot;:[0],&quot;innerRadius&quot;:[35],&quot;outerRadius&quot;:[85],&quot;donutPadding&quot;:[1],&quot;displayLabelText&quot;:true,&quot;displayLabelSize&quot;:false,&quot;displayColorMatch&quot;:true,&quot;labelRadius&quot;:[0],&quot;labelOrientation&quot;:&quot;horizontal&quot;,&quot;labelFormat&quot;:&quot;multiline&quot;,&quot;labelAlignment&quot;:&quot;out&quot;,&quot;displayLabelDetailText&quot;:true,&quot;displayLabelDetailSize&quot;:false,&quot;labelDetailMatchColor&quot;:false,&quot;labelDetailRadius&quot;:[0],&quot;labelDetailOrientation&quot;:&quot;parallel&quot;,&quot;labelDetailPosition&quot;:&quot;external&quot;,&quot;labelDetailFormat&quot;:&quot;inLine&quot;,&quot;labelDetailAlignment&quot;:&quot;out&quot;,&quot;kpiAggregation&quot;:&quot;sum&quot;,&quot;kpiFontSize&quot;:[36],&quot;kpiFontColor&quot;:&quot;#000000&quot;,&quot;kpiFontWeight&quot;:&quot;bold&quot;,&quot;kpiDecimals&quot;:[0],&quot;kpiPrefix&quot;:&quot;&quot;,&quot;kpiSuffix&quot;:&quot;&quot;,&quot;kpiYPosition&quot;:[0],&quot;kpiLocale&quot;:&quot;auto&quot;,&quot;kpiStyle&quot;:&quot;number&quot;,&quot;kpiNotation&quot;:&quot;standard&quot;,&quot;kpiCompactDisplay&quot;:&quot;short&quot;,&quot;displayTextAbove&quot;:false,&quot;textAbove&quot;:&quot;insert ABOVE text here&quot;,&quot;textAboveFontSize&quot;:[16],&quot;textAboveFontColor&quot;:&quot;#000000&quot;,&quot;textAboveFontWeight&quot;:&quot;normal&quot;,&quot;textAboveYPosition&quot;:[-35],&quot;displayTextBelow&quot;:false,&quot;textBelow&quot;:&quot;insert BELOW text here&quot;,&quot;textBelowFontSize&quot;:[16],&quot;textBelowFontColor&quot;:&quot;#000000&quot;,&quot;textBelowFontWeight&quot;:&quot;normal&quot;,&quot;textBelowYPosition&quot;:[35],&quot;wrapTextSize&quot;:[20],&quot;wrapDetailTextSize&quot;:[20],&quot;minPercentageForLabel&quot;:[2],&quot;minPercentageForDetailLabel&quot;:[2],&quot;backgroundColor&quot;:&quot;#0f172a&quot;,&quot;fitWidth&quot;:true,&quot;fitHeight&quot;:true,&quot;fixedWidth&quot;:[1172],&quot;fixedHeight&quot;:[569],&quot;colorRole&quot;:&quot;dimension&quot;,&quot;colorName&quot;:&quot;Category&quot;,&quot;fillColor&quot;:&quot;#4E79A7&quot;,&quot;discreteOption&quot;:&quot;green-orange-teal&quot;,&quot;continuousPaletteType&quot;:null,&quot;continuousSeqColorScheme&quot;:&quot;d3.interpolateBlues&quot;,&quot;continuousDivColorScheme&quot;:&quot;d3.interpolateRdBu&quot;,&quot;startSeqColor&quot;:&quot;#f7f7f7&quot;,&quot;endSeqColor&quot;:&quot;#0571b0&quot;,&quot;startDivColor&quot;:&quot;#ca0020&quot;,&quot;middleDivColor&quot;:&quot;#f7f7f7&quot;,&quot;mediumValue&quot;:0,&quot;endDivColor&quot;:&quot;#0571b0&quot;,&quot;discreteColorPalette&quot;:[&quot;#4e9f50&quot;,&quot;#87d180&quot;,&quot;#ef8a0c&quot;,&quot;#fcc66d&quot;,&quot;#3ca8bc&quot;,&quot;#98d9e4&quot;,&quot;#94a323&quot;,&quot;#c3ce3d&quot;,&quot;#a08400&quot;,&quot;#f7d42a&quot;,&quot;#26897e&quot;,&quot;#8dbfa8&quot;],&quot;uniqueColors&quot;:[&quot;Drug and Weapon Crimes&quot;,&quot;Miscellaneous&quot;,&quot;Sexual Crimes&quot;,&quot;Theft&quot;,&quot;Vandalism&quot;,&quot;Violence&quot;],&quot;displayLegend&quot;:false,&quot;legendBackgroundColor&quot;:&quot;#ffffff&quot;,&quot;legendFontColor&quot;:&quot;#313131&quot;,&quot;legendFrameColor&quot;:&quot;#f3f3f3&quot;,&quot;labelWeight&quot;:&quot;bold&quot;,&quot;labelFontSize&quot;:[14],&quot;labelFontColor&quot;:&quot;#ffffff&quot;,&quot;labelStrokeWidth&quot;:[0],&quot;labelStrokeColor&quot;:&quot;#ffffff&quot;,&quot;labelMatchColor&quot;:false,&quot;labelLocale&quot;:&quot;auto&quot;,&quot;labelStyle&quot;:&quot;number&quot;,&quot;labelNotation&quot;:&quot;standard&quot;,&quot;labelCompactDisplay&quot;:&quot;short&quot;,&quot;labelDecimals&quot;:[0],&quot;labelPrefix&quot;:&quot;&quot;,&quot;labelSuffix&quot;:&quot;&quot;,&quot;labelPixelOrPoint&quot;:&quot;px&quot;}' />
+                <setting key='vizLegend' value='{&quot;left&quot;:11,&quot;top&quot;:14,&quot;width&quot;:200,&quot;height&quot;:188}' />
+              </instance-settings>
+              <type-settings>
+                <worksheet />
+              </type-settings>
+            </_.fcp.VizExtensions.true...add-in>
+            <encodings>
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{150F9A0C-A2C2-4AEE-BC9F-E4F58DF35911}' column='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category (copy)_2010511992123393:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{150F9A0C-A2C2-4AEE-BC9F-E4F58DF35911}' column='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category (copy)_2010511992123393:nk]' custom-type-name='sections' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{33B7EA59-2BC7-445B-8960-030E9A4405DA}' column='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[pcto:cnt:Category:qk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{33B7EA59-2BC7-445B-8960-030E9A4405DA}' column='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[pcto:cnt:Category:qk]' custom-type-name='values' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{9E20F9B7-15ED-411A-8171-A6E986EB87CE}' column='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{9E20F9B7-15ED-411A-8171-A6E986EB87CE}' column='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]' custom-type-name='color' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5932043790817261' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F87808BB-0F9F-4A62-A3BD-B9AA7F33C79E}' />
+    </worksheet>
+    <worksheet name='OBJ2 - Case Resolution Rate per Category'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crime_data_cleaned (crime_data_cleaned)' name='federated.1ct35691nzrczl1dvcpxo1ohbglk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ct35691nzrczl1dvcpxo1ohbglk'>
+            <column caption='Resolution Rate' datatype='real' name='[Calculation_0289225089290240]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [Disposition] = &quot;CLOSED&quot; THEN 1 ELSE 0 END) / COUNT([Disposition])' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Disposition]' role='dimension' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0289225089290240]' derivation='User' name='[usr:Calculation_0289225089290240:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225089290240:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' data-class='subtotal' scope='rows' value='#ffffff' />
+            <format attr='color' data-class='subtotal' scope='cols' value='#ffffff' />
+            <format attr='text-format' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225089290240:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#ffffff' />
+            <format attr='color' scope='cols' value='#ffffff' />
+            <format attr='text-format' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225089290240:qk]' value='' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#0f172a' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]' />
+              <text column='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225089290240:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='auto' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='6.9928369522094727' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]</rows>
+        <cols>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225089290240:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225089290240:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225089290240:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Miscellaneous&quot;</value>
+                <value>0.89834024896265563</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225089290240:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225089290240:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Theft&quot;</value>
+                <value>0.95409181636726548</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225089290240:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225089290240:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Vandalism&quot;</value>
+                <value>0.9242902208201893</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225089290240:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225089290240:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Violence&quot;</value>
+                <value>0.93579521611414185</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225089290240:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225089290240:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Drug and Weapon Crimes&quot;</value>
+                <value>1.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{87EABB86-316C-4B1C-80AE-0D0D76FF99C6}' />
+    </worksheet>
+    <worksheet name='OBJ3 - Offender Age Comfort x Crime Category'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crime_data_cleaned (crime_data_cleaned)' name='federated.1ct35691nzrczl1dvcpxo1ohbglk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ct35691nzrczl1dvcpxo1ohbglk'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column caption='Offender Age Band' datatype='string' name='[Offender_Age_Band]' role='dimension' type='nominal' />
+            <column-instance column='[Category]' derivation='Count' name='[cnt:Category:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Offender_Age_Band]' derivation='None' name='[none:Offender_Age_Band:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' data-class='total' value='#000000' />
+            <format attr='color' data-class='total' scope='cols' value='#ffffff' />
+            <format attr='color' data-class='total' scope='rows' value='#ffffff' />
+            <format attr='color' data-class='subtotal' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#ffffff' />
+            <format attr='color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' max='734' min='1' palette='tp' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='alternate-text' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' value='0' />
+            <format attr='display-alternate-text' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' value='true' />
+            <format attr='omit-on-special' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' value='true' />
+            <format attr='break-on-special' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' value='true' />
+            <format attr='show-null-value-warning' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' value='true' />
+            <format attr='background-color' value='#0f172a' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' />
+              <text column='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows include-empty='true'>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Offender_Age_Band:nk]</rows>
+        <cols include-empty='true'>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]</cols>
+      </table>
+      <simple-id uuid='{9E23E853-43CA-4707-8EB8-3E5D31414763}' />
+    </worksheet>
+    <worksheet name='Pyramid'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crime_data_cleaned (crime_data_cleaned)' name='federated.1ct35691nzrczl1dvcpxo1ohbglk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ct35691nzrczl1dvcpxo1ohbglk'>
+            <column caption='Offender Count' datatype='integer' name='[Calculation_0289225094631432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='- COUNT([Offender_Age_Band])' />
+            </column>
+            <column caption='Offender Age Band' datatype='string' name='[Offender_Age_Band]' role='dimension' type='nominal' />
+            <column-instance column='[Offender_Age_Band]' derivation='None' name='[none:Offender_Age_Band:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0289225094631432]' derivation='User' name='[usr:Calculation_0289225094631432:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]' palette='tableau-map-blue-green' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#0d1117' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#383838' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='21' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Offender_Age_Band:nk]</rows>
+        <cols>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Offender_Age_Band:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Offender_Age_Band:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;0–17 (Juvenile)&quot;</value>
+                <value>-313</value>
+                <value>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Offender_Age_Band:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Offender_Age_Band:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;18–25 (Young Adult)&quot;</value>
+                <value>-878</value>
+                <value>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Offender_Age_Band:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Offender_Age_Band:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;26–35 (Adult)&quot;</value>
+                <value>-1370</value>
+                <value>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Offender_Age_Band:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Offender_Age_Band:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;36–45 (Mid Adult)&quot;</value>
+                <value>-1111</value>
+                <value>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Offender_Age_Band:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Offender_Age_Band:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;46–60 (Mature)&quot;</value>
+                <value>-787</value>
+                <value>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Offender_Age_Band:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Offender_Age_Band:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;60+ (Senior)&quot;</value>
+                <value>-220</value>
+                <value>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094631432:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{1C3D15A7-7F56-4E79-B18C-F6BEC1435AB9}' />
+    </worksheet>
+    <worksheet name='Race'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C1501A62-7219-4DE6-8C3F-B6406E62D8CB}' />
+    </worksheet>
+    <worksheet name='Sheet 10'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crime_data_cleaned (crime_data_cleaned)' name='federated.1ct35691nzrczl1dvcpxo1ohbglk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ct35691nzrczl1dvcpxo1ohbglk'>
+            <column caption='Victim Count' datatype='integer' name='[Calculation_0289225094545415]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Victim_Age_Band])' />
+            </column>
+            <column caption='Victim Age Band' datatype='string' name='[Victim_Age_Band]' role='dimension' type='nominal' />
+            <column-instance column='[Victim_Age_Band]' derivation='None' name='[none:Victim_Age_Band:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0289225094545415]' derivation='User' name='[usr:Calculation_0289225094545415:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]' field-type='quantitative' range-type='uniform' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='18' />
+            <format attr='color' data-class='subtotal' scope='cols' value='#ffffff' />
+            <format attr='band-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Victim_Age_Band:nk]' value='false' />
+            <format attr='color' scope='cols' value='#ffffff' />
+            <format attr='color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Victim_Age_Band:nk]</rows>
+        <cols>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]</cols>
+        <mark-labels>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Victim_Age_Band:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Victim_Age_Band:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;0–17 (Juvenile)&quot;</value>
+                <value>236</value>
+                <value>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Victim_Age_Band:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Victim_Age_Band:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;18–25 (Young Adult)&quot;</value>
+                <value>685</value>
+                <value>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Victim_Age_Band:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Victim_Age_Band:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;26–35 (Adult)&quot;</value>
+                <value>1164</value>
+                <value>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Victim_Age_Band:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Victim_Age_Band:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;36–45 (Mid Adult)&quot;</value>
+                <value>1117</value>
+                <value>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Victim_Age_Band:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Victim_Age_Band:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;46–60 (Mature)&quot;</value>
+                <value>977</value>
+                <value>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Victim_Age_Band:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Victim_Age_Band:nk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]</field>
+                  <field>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;60+ (Senior)&quot;</value>
+                <value>500</value>
+                <value>&quot;[federated.1ct35691nzrczl1dvcpxo1ohbglk].[usr:Calculation_0289225094545415:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{C02F732A-CA1F-4D21-8159-0EE2ABE818B5}' />
+    </worksheet>
+    <worksheet name='Sheet 11'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crime_data_cleaned (crime_data_cleaned)' name='federated.1ct35691nzrczl1dvcpxo1ohbglk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ct35691nzrczl1dvcpxo1ohbglk'>
+            <column caption='Gender Combo' datatype='string' name='[Calculation_2010512167583748]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Offender_Gender] + &quot; → &quot; + [Victim_Gender]' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column caption='Offender Gender' datatype='string' name='[Offender_Gender]' role='dimension' type='nominal' />
+            <column caption='Victim Gender' datatype='string' name='[Victim_Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Category]' derivation='Count' name='[cnt:Category:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2010512167583748]' derivation='None' name='[none:Calculation_2010512167583748:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#ffffff' />
+            <format attr='color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#0f172a' />
+            <format attr='alternate-text' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' value='0' />
+            <format attr='display-alternate-text' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' value='true' />
+            <format attr='omit-on-special' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' />
+              <text column='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]</rows>
+        <cols>[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Calculation_2010512167583748:nk]</cols>
+      </table>
+      <simple-id uuid='{46DC2549-F2E8-48CE-8A44-BC355919CF8A}' />
+    </worksheet>
+    <worksheet name='kp4'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DFF9B9A6-C441-4511-BE9F-5D0FDF68F358}' />
+    </worksheet>
+    <worksheet name='kp5'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2BC8F393-509F-448D-95BB-87FB081AA4D0}' />
+    </worksheet>
+    <worksheet name='kp6'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{042E6EDE-B334-4C72-9524-BF334E4088DB}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='color' value='#ffffff' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='color' value='#ffffff' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98184' id='26' param='vert' type-v2='layout-flow' w='99030' x='485' y='908'>
+            <zone h='5675' id='27' type-v2='title' w='99030' x='485' y='908'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92509' id='11' param='horz' type-v2='layout-flow' w='99030' x='485' y='6583'>
+              <zone h='92509' id='9' type-v2='layout-basic' w='89327' x='485' y='6583'>
+                <zone h='92509' id='18' name='OBJ2 - Case Resolution Rate per Category' w='44661' x='485' y='6583'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='92509' id='22' name='OBJ1- Crime Category Disribution' w='44666' x='45146' y='6583'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='160' h='92509' id='10' is-fixed='true' param='vert' type-v2='layout-flow' w='9703' x='89812' y='6583'>
+                <zone h='17707' id='19' name='OBJ2 - Case Resolution Rate per Category' pane-specification-id='2' param='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]' type-v2='color' w='9703' x='89812' y='6583'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='5789' id='21' name='Pyramid' pane-specification-id='21' param='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]' type-v2='color' w='9703' x='89812' y='24290'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='33598' id='38' name='Sheet 10' w='22022' x='22323' y='66742' />
+        <zone h='33258' id='20' name='Pyramid' w='33333' x='-1264' y='66402' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98184' id='36' param='vert' type-v2='layout-flow' w='99038' x='481' y='908'>
+                <zone h='5675' id='27' type-v2='title' w='99038' x='481' y='908'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='92509' id='18' is-fixed='true' name='OBJ2 - Case Resolution Rate per Category' w='44705' x='481' y='6583'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='17707' id='19' name='OBJ2 - Case Resolution Rate per Category' pane-specification-id='2' param='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[none:Category:nk]' type-v2='color' w='9627' x='89892' y='6583'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46254' id='22' is-fixed='true' name='OBJ1- Crime Category Disribution' w='44706' x='45186' y='6583'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46255' id='20' is-fixed='true' name='Pyramid' w='44706' x='45186' y='52837'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8172' id='21' name='Pyramid' pane-specification-id='9' param='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]' type-v2='color' w='9627' x='89892' y='24290'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9DF55298-BA0B-4050-A7F2-4E575AF33590}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#ffffff'>Crime Analytics Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#0f172a' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98184' id='27' param='vert' type-v2='layout-flow' w='99030' x='485' y='908'>
+            <zone h='5675' id='28' type-v2='title' w='99030' x='485' y='908'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92509' id='25' param='vert' type-v2='layout-flow' w='99030' x='485' y='6583'>
+              <zone h='92509' id='3' param='vert' type-v2='layout-flow' w='99030' x='485' y='6583' />
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='11124' id='5' param='vert' type-v2='layout-flow' w='99158' x='481' y='6243'>
+          <zone h='3292' id='32' type-v2='text' w='99158' x='481' y='6243'>
+            <formatted-text>
+              <run>4679</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#1e293b' />
+          </zone-style>
+        </zone>
+        <zone h='11124' id='7' name='KPI2' w='14130' x='17768' y='6243'>
+          <layout-cache type-h='fixed' type-w='scalable' />
+          <zone-style>
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='11010' id='6' name='KPI1' w='14190' x='-121' y='5902'>
+          <layout-cache type-h='fixed' type-w='scalable' />
+          <zone-style>
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='11010' id='8' name='KPI3' w='15100' x='36386' y='6356'>
+          <layout-cache type-h='fixed' type-w='scalable' />
+          <zone-style>
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#1e293b' />
+          </zone-style>
+        </zone>
+        <zone h='38820' id='22' name='OBJ3 - Offender Age Comfort x Crime Category' w='31959' x='67859' y='19296'>
+          <layout-cache type-h='fixed' type-w='cell' />
+        </zone>
+        <zone h='39728' id='21' name='OBJ1- Crime Category Disribution' w='36264' x='485' y='18729'>
+          <layout-cache cell-count-w='1' non-cell-size-w='1' type-h='cell' type-w='cell' />
+        </zone>
+        <zone h='39047' id='29' name='OBJ2 - Case Resolution Rate per Category' w='33293' x='34021' y='19069'>
+          <layout-cache fixed-size-h='253' minwidth='260' type-h='fixed' type-w='scalable' />
+        </zone>
+        <zone h='39501' id='30' name='Sheet 11' w='33414' x='0' y='60726'>
+          <layout-cache cell-count-h='6' non-cell-size-h='110' type-h='cell' type-w='fixed' />
+        </zone>
+        <zone forceUpdate='true' h='4427' id='33' type-v2='text' w='5397' x='15949' y='38820'>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff'>4679</run>
+          </formatted-text>
+        </zone>
+        <zone h='11237' id='34' name='kp4' w='14554' x='57004' y='6243'>
+          <layout-cache type-h='scalable' type-w='fixed' />
+        </zone>
+        <zone h='10102' id='35' name='kp5' w='16798' x='72953' y='6583'>
+          <layout-cache type-h='scalable' type-w='fixed' />
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98184' id='19' param='vert' type-v2='layout-flow' w='99038' x='481' y='908'>
+                <zone fixed-size='91' h='11633' id='8' is-fixed='true' name='KPI3' w='13699' x='58962' y='3643'>
+                  <layout-cache type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#e6e6e6' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#1e293b' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='91' h='11633' id='6' is-fixed='true' name='KPI1' w='19795' x='1992' y='3878'>
+                  <layout-cache type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#e6e6e6' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='91' h='11633' id='7' is-fixed='true' name='KPI2' w='19433' x='32408' y='3878'>
+                  <layout-cache type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#e6e6e6' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B4D9648A-E81D-4C52-91EA-6D7C708D0CEB}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='OBJ1- Crime Category Disribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{29472BF7-BB95-4F65-B94A-02B7D7DD02BF}' />
+    </window>
+    <window class='worksheet' name='OBJ2 - Case Resolution Rate per Category'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{484E9570-DDA8-4049-BC9B-9A64346B3EDE}' />
+    </window>
+    <window class='worksheet' name='OBJ3 - Offender Age Comfort x Crime Category'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='37'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{534B6A09-6791-449F-9AE6-7F63E09DCC71}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='OBJ1- Crime Category Disribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='OBJ2 - Case Resolution Rate per Category' />
+        <viewpoint name='Pyramid'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 10'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='38' />
+      <device-preview selected='Desktop'>
+        <device name='Generic Desktop Monitor' type='Desktop' />
+      </device-preview>
+      <simple-id uuid='{FDE51A22-7005-42AC-B7CF-BE7A3BF97476}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='KPI1' />
+        <viewpoint name='KPI2' />
+        <viewpoint name='KPI3' />
+        <viewpoint name='OBJ1- Crime Category Disribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='OBJ2 - Case Resolution Rate per Category' />
+        <viewpoint name='OBJ3 - Offender Age Comfort x Crime Category'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 11'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='kp4' />
+        <viewpoint name='kp5' />
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{187BF909-C5C7-4547-93C8-F6D138BB0CAC}' />
+    </window>
+    <window class='worksheet' maximized='true' name='KPI1'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4B47F27B-B91C-481B-8201-52D723383E7A}' />
+    </window>
+    <window class='worksheet' name='KPI2'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AAD9C118-8EF6-4888-8888-223D553B2AFF}' />
+    </window>
+    <window class='worksheet' name='KPI3'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{685171A9-F510-4E07-96B6-7F384921EABA}' />
+    </window>
+    <window class='worksheet' name='kp4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D741A18F-230F-4466-BD9D-5D7A36C3B3C2}' />
+    </window>
+    <window class='worksheet' name='kp5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7C66CF3F-BD9D-471D-8575-DEEF41923CD7}' />
+    </window>
+    <window class='worksheet' name='kp6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5495EE7E-8F94-4597-85A8-116AF6AA2B22}' />
+    </window>
+    <window class='worksheet' name='Pyramid'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='21' param='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{7BB58504-009F-4283-A995-42C04C8ED4C7}' />
+    </window>
+    <window class='worksheet' name='Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{848090BB-E7A0-4B23-8A2E-EF87F006CF5E}' />
+    </window>
+    <window class='worksheet' name='Race'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{414675EE-013F-47B0-9CCF-EF5BFFBA950B}' />
+    </window>
+    <window class='worksheet' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='6' param='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{FC46CE4A-1B5C-4CC3-BADB-25587251A2FE}' />
+    </window>
+    <window class='worksheet' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ct35691nzrczl1dvcpxo1ohbglk].[cnt:Category:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{7153675B-EB91-4C41-A79D-9C25A019AF38}' />
+    </window>
+  </windows>
+  <_.fcp.VizExtensions.true...referenced-extensions>
+    <_.fcp.VizExtensions.true...referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.0.0' id='com.ladataviz.extension.donut'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>Donut</description>
+          <author email='tristan@ladataviz.com' name='LaDataViz' organization='LaDataViz' website='https://www.ladataviz.com' />
+          <min-api-version>1.11</min-api-version>
+          <source-location>
+            <url>https://partner-extensions.tableauusercontent.com/viz/ladataviz/all/donut.html</url>
+          </source-location>
+          <icon />
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+          <encoding id='sections'>
+            <display-name>Sections</display-name>
+            <role-spec>
+              <role-type>discrete-dimension</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='level' />
+          </encoding>
+          <encoding id='values'>
+            <display-name>Angle</display-name>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='size' />
+          </encoding>
+          <encoding id='color'>
+            <display-name>Color</display-name>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+              <role-type>discrete-dimension</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='color' />
+            <tooltip resource-id='tooltip-color'>Add a color to the radar</tooltip>
+          </encoding>
+          <encoding id='kpi'>
+            <display-name>KPI</display-name>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+              <role-type>discrete-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='favorite' />
+          </encoding>
+        </worksheet-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='en_US'>Donut</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='OBJ1- Crime Category Disribution' />
+      </referenced-views>
+    </_.fcp.VizExtensions.true...referenced-extension>
+  </_.fcp.VizExtensions.true...referenced-extensions>
+</workbook>
