@@ -1,0 +1,16 @@
+# Tableau recovery files (auto-generated)
+*.twbr
+
+# Tableau packaged files (large binaries)
+*.twbx
+
+# Extract files
+*.hyper
+*.tde
+
+# Logs / temp
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
