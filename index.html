@@ -1,89 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crime Analytics Dashboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0f172a;
-            color: white;
-            text-align: center;
-        }
+<title>Crime Analytics Dashboard</title>
 
-        h1 {
-            padding: 20px;
-            margin: 0;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #0f172a, #020617);
+        color: #e2e8f0;
+    }
 
-        .dashboard-container {
-            width: 95%;
-            margin: auto;
-        }
-    </style>
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-top: 20px;
+        background: linear-gradient(90deg, #38bdf8, #22c55e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 18px;
+        color: #94a3b8;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    /* KPI Cards */
+    .kpi-row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .kpi {
+        flex: 1;
+        min-width: 150px;
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        transition: 0.3s;
+    }
+
+    .kpi:hover {
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+    }
+
+    .kpi h2 {
+        margin: 0;
+        font-size: 26px;
+        color: #22c55e;
+    }
+
+    .kpi p {
+        margin: 5px 0 0;
+        color: #94a3b8;
+    }
+
+    /* FULL WIDTH DASHBOARD */
+    .dashboard {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tableauPlaceholder,
+    .tableauViz {
+        width: 100% !important;
+    }
+
+</style>
 </head>
 
 <body>
 
-    <h1>Crime Analytics Dashboard</h1>
+<h1>Crime Analytics Dashboard</h1>
+<div class="subtitle">Forensic Analytics - Transforming Evidence into Insight</div>
 
-    <div class="dashboard-container">
-        <div class='tableauPlaceholder' id='viz1775809980742' style='position: relative'>
+<div class="container">
 
-            <noscript>
-                <a href='#'>
-                    <img alt='Dashboard'
-                        src='https://public.tableau.com/static/images/Ta/Tableauminiproject_17758099478640/Dashboard2/1_rss.png'
-                        style='border: none' />
-                </a>
-            </noscript>
+    <!-- KPI CARDS -->
+    <div class="kpi-row">
+        <div class="kpi">
+            <h2>4,679</h2>
+            <p>Total Incidents</p>
+        </div>
 
-            <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https://public.tableau.com/' />
-                <param name='embed_code_version' value='3' />
-                <param name='site_root' value='' />
-                <param name='name' value='Tableauminiproject_17758099478640/Dashboard2' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image'
-                    value='https://public.tableau.com/static/images/Ta/Tableauminiproject_17758099478640/Dashboard2/1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-US' />
-            </object>
+        <div class="kpi">
+            <h2>4,358</h2>
+            <p>Closed Cases</p>
+        </div>
+
+        <div class="kpi">
+            <h2 style="color:#ef4444;">321</h2>
+            <p>Open Cases</p>
+        </div>
+
+        <div class="kpi">
+            <h2>93.1%</h2>
+            <p>Resolution Rate</p>
+        </div>
+
+        <div class="kpi">
+            <h2 style="color:#facc15;">75.2%</h2>
+            <p>Same Race Rate</p>
+        </div>
+
+        <div class="kpi">
+            <h2 style="color:#a78bfa;">45.6%</h2>
+            <p>Same Gender Rate</p>
         </div>
     </div>
 
-    <script type='text/javascript'>
-        var divElement = document.getElementById('viz1775809980742');
-        var vizElement = divElement.getElementsByTagName('object')[0];
+</div>
 
-        function resizeViz() {
-            if (divElement.offsetWidth > 800) {
-                vizElement.style.width = '100%';
-                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-            } else if (divElement.offsetWidth > 500) {
-                vizElement.style.width = '100%';
-                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-            } else {
-                vizElement.style.width = '100%';
-                vizElement.style.height = '1200px';
-            }
+<!-- FULL WIDTH TABLEAU (OUTSIDE CONTAINER FOR EDGE-TO-EDGE LOOK) -->
+<div class="dashboard">
+    <div class='tableauPlaceholder' id='viz1775809980742' style='position: relative;'>
+
+        <noscript>
+            <img 
+                src='https://public.tableau.com/static/images/Ta/Tableauminiproject_17758099478640/Dashboard2/1_rss.png'
+                style='width:100%;' />
+        </noscript>
+
+        <object class='tableauViz' style='width:100%; height:auto;'>
+            <param name='host_url' value='https://public.tableau.com/' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Tableauminiproject_17758099478640/Dashboard2' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='no' />
+            <param name='display_spinner' value='yes' />
+        </object>
+
+    </div>
+</div>
+
+<script>
+    var divElement = document.getElementById('viz1775809980742');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    function resizeViz() {
+        var width = divElement.offsetWidth;
+
+        vizElement.style.width = "100%";
+
+        // 🔥 Increase multiplier for more height
+        if (width > 1200) {
+            vizElement.style.height = (width * 0.9) + "px";
+        } else if (width > 800) {
+            vizElement.style.height = (width * 1.1) + "px";
+        } else {
+            vizElement.style.height = "1400px";
         }
+    }
 
-        resizeViz();
-        window.addEventListener("resize", resizeViz);
+    resizeViz();
+    window.addEventListener("resize", resizeViz);
 
-        var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
 
 </body>
 </html>
