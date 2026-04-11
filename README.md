@@ -55,9 +55,15 @@ Tableau Dashboard → Tableau Public → Embedded via HTML → GitHub Pages
 ## Dashboard Preview
 
 <p align="center">
-  <img src="Screenshot.png" width="100%" />
+  <img src="Screenshot.png" alt="Crime Analytics Dashboard" width="100%" />
 </p>
+
 ---
 
 ## Project Structure
+Crime-Database-Dashboard/
+│── index.html # Main webpage embedding Tableau dashboard
+│── README.md # Project documentation
+│── .gitignore # Ignore unnecessary files (twbx, twbr, etc.)
+│── Screenshot.png # Dashboard preview image
 
