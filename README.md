@@ -52,6 +52,11 @@ The dashboard provides insights into:
 
 Tableau Dashboard → Tableau Public → Embedded via HTML → GitHub Pages
 
+## Dashboard Preview
+
+<p align="center">
+  <img src="screenshot.png" width="100%" />
+</p>
 ---
 
 ## Project Structure
