@@ -62,8 +62,8 @@ Tableau Dashboard → Tableau Public → Embedded via HTML → GitHub Pages
 
 ## Project Structure
 Crime-Database-Dashboard/
-│── index.html # Main webpage embedding Tableau dashboard
-│── README.md # Project documentation
-│── .gitignore # Ignore unnecessary files (twbx, twbr, etc.)
-│── Screenshot.png # Dashboard preview image
+│── index.html 
+│── README.md 
+│── .gitignore 
+│── Screenshot.png
 
