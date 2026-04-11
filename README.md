@@ -55,7 +55,7 @@ Tableau Dashboard → Tableau Public → Embedded via HTML → GitHub Pages
 ## Dashboard Preview
 
 <p align="center">
-  <img src="screenshot.png" width="100%" />
+  <img src="Screenshot.png" width="100%" />
 </p>
 ---
 
